@@ -1,0 +1,143 @@
+@import 'variables';
+
+.footer {
+  background: rgba(61, 64, 80, 1);
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  @media (max-width: $tablet) {
+    height: 100%;
+  }
+  @media (max-width: $mobile) {
+
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 40px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box;
+      gap: 30px;
+      margin: 0;
+    }
+    @media (max-width: $mobile) {
+    }
+  }
+
+  &__copyright {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    @media (max-width: $tablet) {
+      text-align: center;
+    }
+    @media (max-width: $mobile) {
+    }
+  }
+
+  &__payments {
+    display: flex;
+    gap: 38px;
+    @media (max-width: $tablet) {
+    }
+    @media (max-width: $mobile) {
+      gap: 20px;
+    }
+  }
+
+  &__payment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: $tablet) {
+    }
+    @media (max-width: $mobile) {
+      gap: 5px;
+    }
+  }
+
+  &__payment-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__payment-name {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: rgba(195, 195, 195, 1);
+  }
+
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    @media (max-width: $tablet) {
+    }
+    @media (max-width: $mobile) {
+      gap: 20px;
+    }
+  }
+
+    &__icon {
+      display: flex;
+    }
+
+    &__name {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 100%;
+      vertical-align: middle;
+      color: rgba(195, 195, 195, 1);
+    }
+
+
+  &__link {
+    align-items: center;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    display: flex;
+    gap: 10px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: $tablet) {
+    }
+    @media (max-width: $mobile) {
+      gap: 5px;
+    }
+  }
+
+  &__line {
+    height: 18px;
+    width: 1px;
+    background: rgba(195, 195, 195, 1);
+    @media (max-width: $tablet) {
+      display: none;
+    }
+    @media (max-width: $mobile) {
+    }
+  }
+}
+
